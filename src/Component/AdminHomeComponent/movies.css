@@ -1,0 +1,99 @@
+.search-movies{
+    width : 80%;
+    margin : 0px auto;
+    margin-top : 50px;
+    height : 40px;
+    padding : 5px 20px;
+    display: flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items: center;
+}
+.search-movies input{
+    width : 50%;
+    padding : 10px 30px;
+    font-family: "Lexend Deca";
+    font-size : 16px;
+    outline  : none; 
+    border : none;
+    background: var(--primary-color);
+    color : var(--secondary-color);
+    box-shadow: 1px 1px 10px grey;
+    border : 1px solid grey;
+}
+
+
+
+
+.movies-list{
+    width : 80%;
+    margin : 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.movie-container{
+    display: flex;
+    justify-content: center;
+}
+.movie-card{
+    width : 80%;
+    margin:  0px auto;
+    height : 400px;
+    margin-bottom: 60px;
+
+    border-radius: 25px 15px;
+    border-radius: 40px;
+    box-shadow: 1px 1px 10px grey;
+
+}
+.movie-card img{
+    width :100%;
+    border-radius: 25px 15px 0px 0px;
+    border-radius: 40px;
+    object-fit: cover;
+    height : 200px;
+}
+
+.movie-card .name{
+    text-align: center;
+    font-family : Poppins;
+    font-weight : bold;
+    font-size : 18px;
+}
+
+.len,.year,.tags{
+    padding : 10px;
+    font-size: 15px;
+    font-family: "Lexend Deca";
+}
+
+.movie-card:hover{
+    border : 2px solid orange;
+    transform: translateZ(100px);
+    cursor: pointer;
+
+}
+
+@media screen and (max-width : 1025px){
+    .movies-list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width : 912px){
+
+}
+
+@media screen and (max-width : 600px){
+    .movies-list{
+        grid-template-columns: 1fr;
+    }
+}
+
+.greet{
+    font-size : 20px;
+    font-weight : bold;
+    font-family : "Lexend Deca";
+    padding : 20px;
+    text-align: center;
+}
